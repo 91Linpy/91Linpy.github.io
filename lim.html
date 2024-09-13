@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>my Home page</title>
+    <style>
+        * {
+            border: 5px solid blue;
+            font-size: 35px;
+            text-align: center;
+        }
+
+        header {
+            height: 25%;
+            background-color: rgb(238, 241, 50);
+        }
+
+        main {
+            background-color: rgb(77, 158, 234);
+            height: 65%;
+        }
+
+        footer {
+            height: 10%;
+            background-color: rgb(240, 52, 165);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        页面渲染时间:2ms
+    </header>
+    <main>
+        算一个小目标的时间:442ms
+    </main>
+    <footer>
+        江西科技师范大学 林鹏宇 20223488
+    </footer>
+    <script>
+        document.body.style.height = innerHeight - 38 + 'px';
+        console.log("渲染web页元素:" + (new Date() - bigBang) + "ms!");
+        let timer = new Date();
+        for (let i = 1; i <= 1e8; i++) {
+        }
+        console.log("CPU从1数到1亿：" + (new Date() - timer) + "ms!");
+    </script>
+</body>
+
+</html>
